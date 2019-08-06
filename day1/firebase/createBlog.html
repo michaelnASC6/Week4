@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="createBlog.js" type="text/javascript"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-database.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAbsam7-v7KcK_36QZTs4N43JdGjs95C5g",
+    authDomain: "fir-f08d4.firebaseapp.com",
+    databaseURL: "https://fir-f08d4.firebaseio.com",
+    projectId: "fir-f08d4",
+    storageBucket: "",
+    messagingSenderId: "634951061424",
+    appId: "1:634951061424:web:a00901c3356491b8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <title>Firebase</title>
+</head>
+<body>
+<h1>Blogger's Site</h1>
+<div class="mainCreate">
+    <h2></h2>
+    <div class="mainBlog">
+        <div class="authorInfo">
+            <h3 id = "author"></h3>
+            <h3 id = "title"></h3>
+        </div>
+        
+    </div>
+
+</div>
+
+
+
+    <div class="userContainer">
+        <form>
+            <div class="inputContainer">
+                <div class="singleInput">
+                    <label for="username">Author's Name:</label>
+                    <input id="username" type="text">
+                </div>
+                <div class="singleInput">
+                    <label for="message">Blog:</label>
+                    <input id="message" type="text">
+                </div>
+            </div>
+            <button id="submitButton" href="index.html">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
