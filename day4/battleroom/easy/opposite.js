@@ -12,7 +12,11 @@
 
 function opposite(integer){
     const newInt = integer * -1;
-    console.log(newInt)
+    if (integer === 0){
+        console.log(0)
+    } else {
+    console.log(newInt);
+    }
 }
 
-opposite(3);
+opposite(0);

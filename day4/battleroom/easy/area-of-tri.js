@@ -12,4 +12,4 @@ function triArea(x, y){
     console.log("Area: " + area);
 }
 
-triArea(5, 6);
+triArea(0, 4);

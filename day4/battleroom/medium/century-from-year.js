@@ -16,7 +16,7 @@ Input, Output Examples:
 //     output = []
 function centuryFromYear(integer){
     // int = integer.toarray;
-    int = integer.toString;
+    int = integer/100;
     x = integer.length;
     y = integer.length - 1;
     go = int[int.length]
@@ -24,10 +24,10 @@ function centuryFromYear(integer){
     if (x === 0 && y === 0) {
     console.log(integer + "th Century");
 } else{
-const century = Math.ceil(integer/100)*100;   // round X to hundredths
+const century = Math.ceil(integer/100);   // round X to hundredths
     console.log(century+"th Century");
 }
     
 }
 
-centuryFromYear(100);
+centuryFromYear(1998);
